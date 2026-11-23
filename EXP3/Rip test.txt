@@ -1,0 +1,19 @@
+show ip route
+
+Sumulation:
+enable
+configure terminal
+interface serial2/0
+shutdown
+end
+
+show ip route
+
+RealTime:
+configure terminal
+interface serial2/0
+no shutdown
+end
+
+show ip interface brief
+show ip route
